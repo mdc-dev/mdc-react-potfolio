@@ -1,5 +1,6 @@
 import React from 'react';
 import './right-side-bar.scss';
+import "./right-side-bar.css";
 
 function Rightsidebar() {
     return (

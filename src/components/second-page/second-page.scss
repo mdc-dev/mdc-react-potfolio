@@ -56,6 +56,20 @@ $bold-text: 'Roboto', sans-serif;
                 color: $orange;
             }
         }
+        .square {
+            height: 75%;
+            width: 370px;
+            position: absolute;
+            right: -1%;
+            top: 32%;
+            margin: auto;
+            border-radius: 10px;
+            border-radius: 10px;
+            border-color: #f7a059;
+            border-style: solid;
+            border-width: 10px;
+            z-index: 0;
+        }
 
         .photo-place-holder {
             height: 80%;
@@ -64,9 +78,23 @@ $bold-text: 'Roboto', sans-serif;
             right: 2%;
             top: 25%;
             margin: auto;
-            border-width: 1px;
-            border-color: black;
-            border-style: solid;
+            border-radius: 10px;
+            background-image: url('../../assets/headshot.png');
+            background-size: cover;
+            z-index: 20;
+
+            .filter {
+                background-color: #f7a0598e;
+                transition: opacity 1s ease-in;
+                z-index: 1000;
+                height: 100%;
+                width: 100%;
+                border-radius: 10px;
+            }
+    
+            .filter:hover {
+                opacity: 0;
+            }
         }
 
         @media only screen and (min-width: 1380px) {
@@ -92,7 +120,7 @@ $bold-text: 'Roboto', sans-serif;
                 line-height: 1.5em;
             }
 
-            .photo-place-holder {
+            .photo-place-holder, .square {
                 display: none
             }
         }

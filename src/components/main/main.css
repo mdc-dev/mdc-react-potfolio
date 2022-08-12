@@ -1,0 +1,13 @@
+@keyframes button-rise {
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.main-container {
+    animation: button-rise 7s;
+}
